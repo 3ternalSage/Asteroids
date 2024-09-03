@@ -43,7 +43,7 @@ def main():
                 exit()
             for shot in shots:
                 if object.collision_with(shot):
-                    object.kill()
+                    object.split()
         
         for object in drawable:
             object.draw(screen)
